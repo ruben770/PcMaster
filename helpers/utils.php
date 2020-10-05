@@ -152,10 +152,10 @@ class Utils
         } else {
             $descripcion = Utils::test_input($_POST["descripcion"]);
             // check if descripcion only contains letters and whitespace
-            if (!preg_match("/^[a-zA-Z0-9 ]*$/", $descripcion)) {
-                $descripcionErr = "Solo letras y numeros son permitidos en el campo: descripcion";
-                return $descripcionErr;
-            }
+            // if (!preg_match("/^[a-zA-Z0-9 ]*$/", $descripcion)) {
+            //     $descripcionErr = "Solo letras y numeros son permitidos en el campo: descripcion";
+            //     return $descripcionErr;
+            // }
         }
         array_push($res, $descripcion);
 

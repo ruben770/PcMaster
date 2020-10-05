@@ -1,10 +1,14 @@
-<h1>Gestionar Categorias</h1>
-<a href="<?= base_url ?>categoria/crear" class="button button-small">Crear Categoria</a>
-<table border="1">
-    <tr>
-        <th>ID</th>
-        <th>NOMBRE</th>
-    </tr>
+<h3>Gestionar Categorías</h3>
+<hr>
+<br>
+<a href="<?= base_url ?>categoria/crear" class="waves-effect waves-light btn"><i class="material-icons right">library_add</i>Crear Categoria</a>
+<table border="1" class="responsive-table centered highlight">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre de Categoría</th>
+        </tr>
+    </thead>
     <?php while ($cat = $categorias->fetch_object()) : ?>
         <tr>
             <td><?= $cat->id; ?></td>

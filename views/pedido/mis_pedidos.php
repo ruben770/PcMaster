@@ -1,22 +1,26 @@
 <?php if (isset($pedidos) && $pedidos->num_rows > 0) : ?>
     <?php if (isset($gestion)) : ?>
-        <h1>Gestion de pedidos</h1>
+        <h3>Gestión de pedidos</h3>
     <?php else : ?>
-        <h1>Mis pedidos</h1>
+        <h3>Mis pedidos</h3>
     <?php endif; ?>
+    <hr>
+    <br>
 
-    <table>
-        <tr>
-            <th># de Pedido</th>
-            <th>Costo</th>
-            <th>Fecha</th>
-            <th>Estado</th>
-        </tr>
+    <table class="responsive-table centered highlight">
+        <thead>
+            <tr>
+                <th># de Pedido</th>
+                <th>Costo</th>
+                <th>Fecha</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
         <?php while ($pedido = $pedidos->fetch_object()) :
         ?>
             <tr>
                 <td>
-                    <a href="<?= base_url ?>pedido/detalle&id=<?= $pedido->id ?>"><?= $pedido->id ?></a>
+                    <a class="col s4 offset-s3 btn-small waves-effect waves-light center-align" href="<?= base_url ?>pedido/detalle&id=<?= $pedido->id ?>"><?= $pedido->id ?></a>
                 </td>
                 <td>
                     $ <?= $pedido->costo ?>

@@ -1,5 +1,5 @@
 <?php if (isset($_SESSION['pedido']) && $_SESSION['pedido'] == 'complete') : ?>
-    <h1>Tu pedido se ha confirmado.</h1>
+    <h3>Tu pedido se ha confirmado.</h3>
     <p>
         Tu pedido ha sido registrado con éxito, prosigue a pagar el monto total
         de tu orden con una transferencia bancaria a la cuenta X-X-X-X-X-X-X-X-X-X-X para que podamos enviártelo a casa lo más pronto posible.
@@ -24,7 +24,7 @@
                         <?php if ($producto->imagen != null) : ?>
                             <img src="<?= base_url ?>uploads/images/<?= $producto->imagen ?>" alt="" class="img_carrito">
                         <?php else : ?>
-                            <img src="<?= base_url ?>assets/img/wasd.jpg" alt="" class="img_carrito">
+                            <img src="<?= base_url ?>assets/img/logomaster.png" alt="" class="img_carrito">
                         <?php endif; ?>
                     </td>
                     <td>
