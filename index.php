@@ -1,7 +1,7 @@
 <?php
 session_start();
 ob_start();
-define("base_url", __DIR__ . "/");
+define("base_url", chop(__DIR__, "app") . "/");
 require_once 'autoload.php';
 require_once 'config/db.php';
 require_once 'config/parameters.php';
