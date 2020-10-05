@@ -1,6 +1,7 @@
 <?php
 session_start();
 ob_start();
+define("base_url", __DIR__);
 require_once 'autoload.php';
 require_once 'config/db.php';
 require_once 'config/parameters.php';
