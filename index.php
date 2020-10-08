@@ -24,7 +24,6 @@ if (isset($_GET['controller'])) {
     $nombre_controlador = defaultController;
 } else {
     err404();
-    exit();
 }
 
 try {
