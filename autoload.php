@@ -10,6 +10,7 @@ function controllers_autoload($classname)
         throw new ClassNotFoundException($classname . "yyy " .  $file);
     }
     include($file);
+    echo "<h4>$file incluido</h4>";
 }
 
 spl_autoload_register('controllers_autoload');
