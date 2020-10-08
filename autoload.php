@@ -7,7 +7,7 @@ function controllers_autoload($classname)
 
     $file = __DIR__ . '/' . 'controllers/' . $classname . '.php';
     if (!file_exists($file)) {
-        throw new ClassNotFoundException($classname, $file);
+        throw new ClassNotFoundException($classname . "yyy " .  $file);
     }
     include($file);
 }
