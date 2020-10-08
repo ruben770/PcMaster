@@ -5,7 +5,7 @@ class ClassNotFoundException extends Exception
 function controllers_autoload($classname)
 {
 
-    $file = __DIR__ . '/' . 'controllers/' . $classname . '.php';
+    $file = 'controllers' . DIRECTORY_SEPARATOR . $classname . '.php';
     if (!file_exists($file)) {
         throw new ClassNotFoundException($classname . "yyy " .  $file);
     }
