@@ -2,4 +2,4 @@ RewriteEngine On
 ErrorDocument 404 https://pc-master.herokuapp.com/error/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2 [QSA]
