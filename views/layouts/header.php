@@ -58,26 +58,26 @@
             <div class="collection">
                 <?php $stats = Utils::statsCarrito()
                 ?>
-                <a href="<?= base_url ?>carrito/index" class="collection-item waves-effect waves-red">Productos únicos (<?= $stats['count'] ?>)</a>
-                <a href="<?= base_url ?>carrito/index" class="collection-item waves-effect waves-red">Total: $ <?= $stats['total'] ?></a>
-                <a href="<?= base_url ?>carrito/index" class="collection-item waves-effect waves-red">Ver el carrito</a>
+                <a href="<?= base_url ?>Carrito/index" class="collection-item waves-effect waves-red">Productos únicos (<?= $stats['count'] ?>)</a>
+                <a href="<?= base_url ?>Carrito/index" class="collection-item waves-effect waves-red">Total: $ <?= $stats['total'] ?></a>
+                <a href="<?= base_url ?>Carrito/index" class="collection-item waves-effect waves-red">Ver el carrito</a>
             </div>
             <?php if (isset($_SESSION['admin'])) : ?>
                 <li>
                     <h5><b>Administrar</b></h5>
                 </li>
                 <div class="collection">
-                    <a href="<?= base_url ?>categoria/index" class="collection-item waves-effect waves-red">Administrar Categorias</a>
-                    <a href="<?= base_url ?>producto/gestion" class="collection-item waves-effect waves-red">Gestion de Productos</a>
-                    <a href="<?= base_url ?>pedido/gestion" class="collection-item waves-effect waves-red">Gestion de Pedidos</a>
+                    <a href="<?= base_url ?>Categoria/index" class="collection-item waves-effect waves-red">Administrar Categorias</a>
+                    <a href="<?= base_url ?>Producto/gestion" class="collection-item waves-effect waves-red">Gestion de Productos</a>
+                    <a href="<?= base_url ?>Pedido/gestion" class="collection-item waves-effect waves-red">Gestion de Pedidos</a>
                 </div>
 
             <?php endif; ?>
             <?php if (isset($_SESSION['identity'])) : ?>
 
                 <div class="collection">
-                    <a href="<?= base_url ?>pedido/mis_pedidos" class="collection-item waves-effect waves-red">Mis Pedidos</a>
-                    <a href="<?= base_url ?>usuario/logout" class="collection-item waves-effect waves-red">Cerrar Sesión</a>
+                    <a href="<?= base_url ?>Pedido/mis_pedidos" class="collection-item waves-effect waves-red">Mis Pedidos</a>
+                    <a href="<?= base_url ?>Usuario/logout" class="collection-item waves-effect waves-red">Cerrar Sesión</a>
                 </div>
             <?php endif; ?>
         </ul>
@@ -89,7 +89,7 @@
         <ul>
             <li><a href="<?= base_url ?>">Inicio</a></li>
             <?php while ($cat = $categorias->fetch_object()) : ?>
-                <li><a href="<?= base_url ?>categoria/ver&id=<?= $cat->id ?>"><?= $cat->nombre ?></a></li>
+                <li><a href="<?= base_url ?>Categoria/ver&id=<?= $cat->id ?>"><?= $cat->nombre ?></a></li>
             <?php endwhile; ?>
         </ul>
     </nav>
@@ -104,7 +104,7 @@
                     <li class="tab col s4 hide"><a class="active" target="_self" href="<?= base_url ?>">Inicio</a></li>
                     <li class="tab col s4"><a target="_self" href="<?= base_url ?>">Inicio</a></li>
                     <?php while ($cat = $categorias->fetch_object()) : ?>
-                        <li class="tab col s4"><a target="_self" href="<?= base_url ?>categoria/ver&id=<?= $cat->id ?>"><?= $cat->nombre ?></a></li>
+                        <li class="tab col s4"><a target="_self" href="<?= base_url ?>Categoria/ver&id=<?= $cat->id ?>"><?= $cat->nombre ?></a></li>
                     <?php endwhile; ?>
                 </ul>
             </div>

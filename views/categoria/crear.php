@@ -8,7 +8,7 @@
 <?php Utils::deleteSession('register'); ?>
 <?php Utils::deleteSession('error'); ?>
 <div class="row add-category">
-    <form action="<?= base_url ?>categoria/save" method="post">
+    <form action="<?= base_url ?>Categoria/save" method="post">
         <div class="input-field col s12 m6">
             <i class="material-icons prefix">library_add</i>
             <input id="icon_prefix" type="text" name="nombre" required>

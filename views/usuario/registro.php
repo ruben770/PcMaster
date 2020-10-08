@@ -7,7 +7,7 @@
 <?php Utils::deleteSession('register'); ?>
 <?php Utils::deleteSession('error'); ?>
 
-<form action="<?= base_url ?>usuario/save" method="post">
+<form action="<?= base_url ?>Usuario/save" method="post">
     <label for="nombre">Nombre</label>
     <?php if (isset($_SESSION['data'])) : ?>
         <?php var_dump($_SESSION['data'][0]) ?>

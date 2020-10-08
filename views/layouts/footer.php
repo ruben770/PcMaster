@@ -5,16 +5,16 @@
         <h5><b>Mi carrito</b></h5>
         <ul>
             <?php $stats = Utils::statsCarrito() ?>
-            <li><a href="<?= base_url ?>carrito/index">Productos (<?= $stats['count'] ?>)</a></li>
-            <li><a href="<?= base_url ?>carrito/index">Total: $ <?= $stats['total'] ?></a></li>
-            <li><a href="<?= base_url ?>carrito/index">Ver el carrito</a></li>
+            <li><a href="<?= base_url ?>Carrito/index">Productos (<?= $stats['count'] ?>)</a></li>
+            <li><a href="<?= base_url ?>Carrito/index">Total: $ <?= $stats['total'] ?></a></li>
+            <li><a href="<?= base_url ?>Carrito/index">Ver el carrito</a></li>
         </ul>
     </div>
     <br>
     <div id=" login" class="block_aside">
         <?php if (!isset($_SESSION['identity'])) : ?>
             <h5><b>Iniciar Sesión</b></h5>
-            <form action="<?= base_url ?>usuario/login " method="post">
+            <form action="<?= base_url ?>Usuario/login " method="post">
                 <div class="row">
                     <div class="input-field col 12">
                         <i class="material-icons prefix">account_circle</i>
@@ -44,15 +44,15 @@
         <?php Utils::deleteSession('error_login'); ?>
         <ul>
             <?php if (isset($_SESSION['admin'])) : ?>
-                <li><a href="<?= base_url ?>categoria/index">Administrar Categorias</a></li>
-                <li><a href="<?= base_url ?>producto/gestion">Gestion de Productos</a></li>
-                <li><a href="<?= base_url ?>pedido/gestion">Gestion de Pedidos</a></li>
+                <li><a href="<?= base_url ?>Categoria/index">Administrar Categorias</a></li>
+                <li><a href="<?= base_url ?>Producto/gestion">Gestion de Productos</a></li>
+                <li><a href="<?= base_url ?>Pedido/gestion">Gestion de Pedidos</a></li>
             <?php endif; ?>
             <?php if (isset($_SESSION['identity'])) : ?>
-                <li><a href="<?= base_url ?>pedido/mis_pedidos">Mis Pedidos</a></li>
-                <li><a href="<?= base_url ?>usuario/logout">Cerrar Sesión</a></li>
+                <li><a href="<?= base_url ?>Pedido/mis_pedidos">Mis Pedidos</a></li>
+                <li><a href="<?= base_url ?>Usuario/logout">Cerrar Sesión</a></li>
             <?php else : ?>
-                <li><a href="<?= base_url ?>usuario/register">Registrarse</a></li>
+                <li><a href="<?= base_url ?>Csuario/register">Registrarse</a></li>
             <?php endif; ?>
         </ul>
 
@@ -71,9 +71,9 @@
             <div class="col l4 offset-l2 s12 center-align">
                 <h5 class="white-text">Mi Carrito</h5>
                 <ul>
-                    <li><a class="grey-text text-lighten-3" href="<?= base_url ?>carrito/index">Productos (<?= $stats['count'] ?>)</a></li>
-                    <li><a class="grey-text text-lighten-3" href="<?= base_url ?>carrito/index">Total: $ <?= $stats['total'] ?></a></li>
-                    <li><a class="grey-text text-lighten-3" href="<?= base_url ?>carrito/index">Ver el carrito</a></li>
+                    <li><a class="grey-text text-lighten-3" href="<?= base_url ?>Carrito/index">Productos (<?= $stats['count'] ?>)</a></li>
+                    <li><a class="grey-text text-lighten-3" href="<?= base_url ?>Carrito/index">Total: $ <?= $stats['total'] ?></a></li>
+                    <li><a class="grey-text text-lighten-3" href="<?= base_url ?>Carrito/index">Ver el carrito</a></li>
                 </ul>
             </div>
         </div>

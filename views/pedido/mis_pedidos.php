@@ -20,7 +20,7 @@
         ?>
             <tr>
                 <td>
-                    <a class="col s4 offset-s3 btn-small waves-effect waves-light center-align" href="<?= base_url ?>pedido/detalle&id=<?= $pedido->id ?>"><?= $pedido->id ?></a>
+                    <a class="col s4 offset-s3 btn-small waves-effect waves-light center-align" href="<?= base_url ?>Pedido/detalle&id=<?= $pedido->id ?>"><?= $pedido->id ?></a>
                 </td>
                 <td>
                     $ <?= $pedido->costo ?>

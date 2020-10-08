@@ -1,11 +1,11 @@
 <?php if (isset($_SESSION['identity'])) : ?>
     <h1>Preparemos los detalles de tu pedido</h1>
     <p>
-        <a href="<?= base_url ?>carrito/index">Ve tus productos y precios.</a>
+        <a href="<?= base_url ?>Carrito/index">Ve tus productos y precios.</a>
     </p>
     <br>
     <h3>Datos de tu domicilio para el envío:</h3>
-    <form action="<?= base_url ?>pedido/add" method="post">
+    <form action="<?= base_url ?>Pedido/add" method="post">
         <label for="estado">Estado</label>
         <input type="text" name="estado" required>
 

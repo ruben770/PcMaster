@@ -3,7 +3,7 @@
 
     <?php if (isset($_SESSION['admin'])) : ?>
         <h3>Cambiar el estado del pedido</h3>
-        <form action="<?= base_url ?>pedido/estado" method="post">
+        <form action="<?= base_url ?>Pedido/estado" method="post">
             <input type="hidden" name="id_pedido" value="<?= $pedido->id ?>">
             <select name="estado" id="">
                 <option value="confirmed" <?= $pedido->estado == 'Confirmed' ? 'selected' : '' ?>>Pendiente de pago</option>
@@ -41,7 +41,7 @@
                     <?php endif; ?>
                 </td>
                 <td>
-                    <a href="<?= base_url ?>producto/ver&id=<?= $producto->id ?>"><?= $producto->nombre ?></a>
+                    <a href="<?= base_url ?>Producto/ver&id=<?= $producto->id ?>"><?= $producto->nombre ?></a>
                 </td>
                 <td>
                     $ <?= $producto->precio ?>

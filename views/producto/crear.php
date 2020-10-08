@@ -1,9 +1,9 @@
 <?php if (isset($edit) && isset($prod) && is_object($prod)) : ?>
     <h1>Editar un Producto: <?= $prod->nombre ?></h1>
-    <?php $url_action = base_url . "producto/save&id=" . $prod->id; ?>
+    <?php $url_action = base_url . "Producto/save&id=" . $prod->id; ?>
 <?php else : ?>
     <h1>Añadir Nuevos Productos</h1>
-    <?php $url_action = base_url . "producto/save"; ?>
+    <?php $url_action = base_url . "Producto/save"; ?>
     <?php if (isset($_SESSION['register']) && $_SESSION['register'] == 'complete') : ?>
         <strong class="alert_green">Producto añadido</strong>
     <?php elseif (isset($_SESSION['register']) && $_SESSION['register'] == 'failed' && isset($_SESSION['error'])) : ?>
