@@ -55,6 +55,7 @@ try {
     err404();
     echo "<h1>cuart error</h1>";
     echo $e;
+    echo __DIR__;
 }
 // require_once 'views/layouts/sidebar.php';
 require_once 'views/layouts/footer.php';
