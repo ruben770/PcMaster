@@ -37,21 +37,21 @@ class UsuarioController
 
                 if ($save === true) {
                     $_SESSION['register'] = 'complete';
-                    header('Location:' . base_url . '/usuario/register');
+                    header('Location:' . base_url . 'Usuario/register');
                 } else {
                     $_SESSION['error'] = $save;
                     $_SESSION['register'] = 'failed';
-                    header('Location:' . base_url . '/usuario/register');
+                    header('Location:' . base_url . 'Usuario/register');
                 }
             } else {
                 $_SESSION['register'] = 'failed';
                 $_SESSION['error'] = $res;
-                header('Location:' . base_url . '/usuario/register');
+                header('Location:' . base_url . 'Usuario/register');
             }
         } else {
             $_SESSION['error'] = "intente de nuevo.";
             $_SESSION['register'] = 'failed';
-            header('Location:' . base_url . '/usuario/register');
+            header('Location:' . base_url . 'Usuario/register');
         }
     }
 

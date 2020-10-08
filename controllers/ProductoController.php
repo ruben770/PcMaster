@@ -76,7 +76,7 @@ class ProductoController
             $_SESSION['error'] = "intente de nuevo.";
             $_SESSION['register'] = 'failed';
         }
-        header('Location:' . base_url . '/producto/crear');
+        header('Location:' . base_url . 'Producto/crear');
     }
 
     function editar()
@@ -89,7 +89,7 @@ class ProductoController
             $prod = $producto->getOne();
             require_once 'views/producto/crear.php';
         } else {
-            header('Location:' . base_url . 'producto/gestion');
+            header('Location:' . base_url . 'Producto/gestion');
         }
     }
 
@@ -111,6 +111,6 @@ class ProductoController
             $_SESSION['deledit'] = 'deletefail';
         }
 
-        header('Location:' . base_url . 'producto/gestion');
+        header('Location:' . base_url . 'Producto/gestion');
     }
 }

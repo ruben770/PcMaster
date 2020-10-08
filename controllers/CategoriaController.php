@@ -49,16 +49,16 @@ class CategoriaController
 
             if ($save === true) {
                 $_SESSION['register'] = 'complete';
-                header('Location:' . base_url . '/categoria/crear');
+                header('Location:' . base_url . 'Categoria/crear');
             } else {
                 $_SESSION['error'] = $save;
                 $_SESSION['register'] = 'failed';
-                header('Location:' . base_url . '/categoria/crear');
+                header('Location:' . base_url . 'Categoria/crear');
             }
         } else {
             $_SESSION['error'] = "intente de nuevo.";
             $_SESSION['register'] = 'failed';
-            header(('Location:' . base_url . "categoria/crear"));
+            header(('Location:' . base_url . "Categoria/crear"));
         }
     }
 }

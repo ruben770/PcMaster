@@ -45,7 +45,7 @@ class PedidoController
                 $_SESSION['error'] = "intente de nuevo.";
                 $_SESSION['pedido'] = 'failed';
             }
-            header('Location:' . base_url . 'pedido/confirmado');
+            header('Location:' . base_url . 'Pedido/confirmado');
             // //guardar en bd
             // $pedido = new Pedido();
             // $pedido->setEstado();
@@ -96,7 +96,7 @@ class PedidoController
             require_once 'views/pedido/detalle.php';
         } else {
 
-            header('Location:' . base_url . 'pedido/mis_pedidos');
+            header('Location:' . base_url . 'Pedido/mis_pedidos');
         }
     }
 
@@ -118,7 +118,7 @@ class PedidoController
             $pedido->setId($_POST['id_pedido']);
             $pedido->setEstado($_POST['estado']);
             $pedidos = $pedido->updateEstado();
-            header('Location:' . base_url . 'pedido/detalle&id=' . $_POST['id_pedido']);
+            header('Location:' . base_url . 'Pedido/detalle&id=' . $_POST['id_pedido']);
         } else {
             header('Location:' . base_url);
         }

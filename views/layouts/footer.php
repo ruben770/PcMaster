@@ -52,7 +52,7 @@
                 <li><a href="<?= base_url ?>Pedido/mis_pedidos">Mis Pedidos</a></li>
                 <li><a href="<?= base_url ?>Usuario/logout">Cerrar Sesión</a></li>
             <?php else : ?>
-                <li><a href="<?= base_url ?>Csuario/register">Registrarse</a></li>
+                <li><a href="<?= base_url ?>Usuario/register">Registrarse</a></li>
             <?php endif; ?>
         </ul>
 

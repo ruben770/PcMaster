@@ -37,8 +37,8 @@
                     <h5><b>Bienvenido</b></h5>
                 </li>
                 <div class="collection">
-                    <a href="<?= base_url ?>usuario/loginpage" class="collection-item waves-effect waves-red">Iniciar Sesión</a>
-                    <a href="<?= base_url ?>usuario/register" class="collection-item waves-effect waves-red">Registrarse</a>
+                    <a href="<?= base_url ?>Usuario/loginpage" class="collection-item waves-effect waves-red">Iniciar Sesión</a>
+                    <a href="<?= base_url ?>Usuario/register" class="collection-item waves-effect waves-red">Registrarse</a>
                 </div>
             <?php else : ?>
                 <li>
