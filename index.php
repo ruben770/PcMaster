@@ -24,6 +24,7 @@ if (isset($_GET['controller'])) {
     $nombre_controlador = defaultController;
 } else {
     err404();
+    echo "<h1>Primer error</h1>";
 }
 
 try {
@@ -42,13 +43,17 @@ try {
             $controlador->$action();
         } else {
             err404();
+            echo "<h1>seg error</h1>";
         }
     } else {
         err404();
+        echo "<h1>terc error</h1>";
+
         //echo 'Error 404, Not Found';
     }
 } catch (ClassNotFoundException $e) {
     err404();
+    echo "<h1>cuart error</h1>";
 }
 // require_once 'views/layouts/sidebar.php';
 require_once 'views/layouts/footer.php';
