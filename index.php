@@ -1,11 +1,9 @@
 <?php
 session_start();
-ob_start();
 
-require('vendor/autoload.php');
+require_once 'config/parameters.php';
 require_once 'autoload.php';
 require_once 'config/db.php';
-require_once 'config/parameters.php';
 require_once 'helpers/utils.php';
 require_once 'views/layouts/header.php';
 
